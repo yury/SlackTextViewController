@@ -54,6 +54,8 @@ UIKIT_EXTERN NSString * const SLKTextViewPastedItemData;
  If dynamic type is enabled, the maximum number of lines will be calculated proportionally to the user preferred font size. */
 @property (nonatomic, readwrite) NSUInteger maxNumberOfLines;
 
+@property (nonatomic, readwrite) UIEdgeInsets placeholderInsets;
+
 /** The current displayed number of lines. */
 @property (nonatomic, readonly) NSUInteger numberOfLines;
 

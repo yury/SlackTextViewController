@@ -381,6 +381,8 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
     rect.size.width = self.textContainer.size.width - padding*2.0;
     rect.origin = UIEdgeInsetsInsetRect(bounds, self.textContainerInset).origin;
     rect.origin.x += padding;
+    rect.origin.x += _placeholderInsets.left;
+    rect.size.width -= _placeholderInsets.right;
     
     return rect;
 }
